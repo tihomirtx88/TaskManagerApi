@@ -5,12 +5,8 @@ const ConnectDB  = require("./db/db");
 require("dotenv").config();
 
 // Middleware
+app.use(express.static('./public'));
 app.use(express.json());
-
-// Root route
-app.get("/", (req, res) => {
-  res.send("Task Manager API");
-});
 
 // App routes
 app.use("/api/v1/tasks", tasks);
