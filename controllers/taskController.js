@@ -18,8 +18,17 @@ const createTasks = async (req, res) => {
   }
 };
 
-const getTask = (req, res) => {
-  res.send("Get tasks");
+const getTask = async (req, res) => {
+  try {
+    const {id: taskID} = req.params; 
+    const task = await Task.findOne({_id: taskID});
+    if (!task) {
+        return res.status(404).json({msg: `There is not task with id: ${taskID}`});
+    }
+    res.status(200).json({task});
+  } catch (error) {
+    res.status(500).json({msg: error});
+  }
 };
 
 const deleteTask = (req, res) => {
