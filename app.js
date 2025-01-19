@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const tasks = require("./routes/tasks");
 const ConnectDB  = require("./db/db");
+require("dotenv").config();
 
 // Middleware
 app.use(express.json());
@@ -18,7 +19,7 @@ const port = 4300;
 
 const start = async () => {
   try {
-    await ConnectDB();
+    await ConnectDB(process.env.MONGO_URL );
     app.listen(port, console.log(`- Local: http://localhost:${port}/`));
   } catch (error) {
     console.log(error);
