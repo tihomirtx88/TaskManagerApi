@@ -5,6 +5,8 @@ const ConnectDB  = require("./db/db");
 require("dotenv").config();
 const notfound = require("./middleware/not-found");
 const errorHandlerMiddleware = require("./middleware/error-handler");
+const cors = require("cors");
+app.use(cors());
 
 // Middleware
 app.use(express.static('./public'));
@@ -16,7 +18,7 @@ app.use("/api/v1/tasks", tasks);
 app.use(notfound);
 app.use(errorHandlerMiddleware);
 
-const port = 4300;
+const port = process.env.PORT || 4300;
 
 const start = async () => {
   try {

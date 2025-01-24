@@ -42,6 +42,9 @@ go to http://localhost:4300/
 ### Integrate the backend
 
 For backend is using https://nodejs.org/en, https://expressjs.com/, https://mongoosejs.com/ and MongoDB for database.
+=======
+For backend is using https://supabase.com/ , that way the loading data speed are slow down.
+
 
 
 ## Authors
@@ -56,3 +59,4 @@ For backend is using https://nodejs.org/en, https://expressjs.com/, https://mong
 -   **[Node.js](https://nodejs.org/en/)**
 -   **[Express.js](https://expressjs.com/)**
 -   **[Mongoose](https://mongoosejs.com/)**
+
