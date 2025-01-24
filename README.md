@@ -1,10 +1,7 @@
 # WildHotel
 
-The idea behind this application is to create a Booking in hotel around wild natour. In this
-application the user can register an account, create booking , change the account information and upload new image, check booking statistic with recharts library; and the admin can manage resources including
-creating new user and update users information also to create cabin with relate with the bookings. The App include pagination, sorting and much more. Here we are creating the front
-end of the application that you can see live
-[here](https://github.com/tihomirtx88/WildHotel). 
+This is an API with a simple frontend in JavaScript, designed to allow performing all CRUD operations for creating, editing, and deleting tasks.
+[here](https://github.com/tihomirtx88/TaskManagerApi). 
 
 ## Getting Started
 
@@ -25,26 +22,29 @@ end of the application that you can see live
 ```bash
 
 # Clone the repository
-$ git clone https://github.com/tihomirtx88/WildHotel.git
+$ git clone https://github.com/tihomirtx88/TaskManagerApi.git
 
 # Enter the project folder in the terminal
-$ cd WildHotel-main
+$ cd TaskManagerAp
 
 # Install all the dependencies
 $ npm install
 
 # Execute the appliction with this command
-$ npm run dev
+$ npm start
 
 # The server will start in the port:3000
-go to http://localhost:3000/
+go to http://localhost:4300/
 
 ```
 
 
 ### Integrate the backend
 
+For backend is using https://nodejs.org/en, https://expressjs.com/, https://mongoosejs.com/ and MongoDB for database.
+=======
 For backend is using https://supabase.com/ , that way the loading data speed are slow down.
+
 
 
 ## Authors
@@ -54,11 +54,9 @@ For backend is using https://supabase.com/ , that way the loading data speed are
 </a>
 
 ## Used Technologies
+### **Application** ([Node.js](https://nodejs.org/en/))
 
-Those following tools were used in the project development:
+-   **[Node.js](https://nodejs.org/en/)**
+-   **[Express.js](https://expressjs.com/)**
+-   **[Mongoose](https://mongoosejs.com/)**
 
-### **Application** ([ReactJS](https://reactjs.org/))
-
--   **[ReactDom](https://reactjs.org/docs/react-dom.html)**
--   **[ReactRouter](https://reactrouter.com/en/main)**
--   **[ReactContext](https://reactjs.org/docs/context.html)**
