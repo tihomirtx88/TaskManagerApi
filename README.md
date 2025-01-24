@@ -1,4 +1,4 @@
-# WildHotel
+# Task Manager
 
 This is an API with a simple frontend in JavaScript, designed to allow performing all CRUD operations for creating, editing, and deleting tasks.
 [here](https://github.com/tihomirtx88/TaskManagerApi). 
